@@ -13,4 +13,4 @@ gretting.register_message_handler_user(loader.dp)
 
 
 if __name__ == "__main__":
-    executor.start_polling(dispatcher=loader.dp, on_startup ,skip_updates=True)
+    executor.start_polling(on_startup, dispatcher=loader.dp, skip_updates=True)
