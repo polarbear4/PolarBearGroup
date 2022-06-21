@@ -1,1 +1,1 @@
-worker: PolarBearGroup/app.py
+worker: python3 app.py
