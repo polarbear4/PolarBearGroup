@@ -1,1 +1,1 @@
-worker: .\app.py
+worker: app.py
