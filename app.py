@@ -1,7 +1,7 @@
 from aiogram.utils import executor
 from users import gretting
 from db import users_db
-import loader
+from loader import dp
 
 
 def on_startup(_):
@@ -9,8 +9,8 @@ def on_startup(_):
 
 
 
-gretting.register_message_handler_user(loader.dp)
+gretting.register_message_handler_user(dp)
 
 
 if __name__ == "__main__":
-    executor.start_polling(on_startup, dispatcher=loader.dp, skip_updates=True)
+    executor.start_polling(on_startup, dispatcher=dp, skip_updates=True)
